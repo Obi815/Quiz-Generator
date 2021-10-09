@@ -8,13 +8,23 @@
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script defer src="./assets/quiz.js"></script>
 </head>
-<body>
+<body >
     <div class="container">
-        <div id="home" class="flex-column flex-center">
-            <h1> Are You Ready</h1>
-            <a href="/game.html" class="btn">Play<i class="fas fa-gamepad"></i></a>
-            <a href="/highscores.html" id="highscore-btn" class="btn">High Scores<i class="fas fa-crown"></i></a>
+        <div id="question-container" class="hide">
+            <div id="question">Questions</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn"> Start</button>
+            <button id="next-btn" class="next-btn btn"> Next</button>
         </div>
     </div>
 </body>
