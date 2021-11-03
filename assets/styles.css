@@ -1,5 +1,5 @@
 :root{
-    background: navy;
+    background: blue;
 }
 *{
     box-sizing: border-box;
@@ -49,8 +49,28 @@ h2{
     padding: 2rem 0;
     width: 30rem;
     margin-bottom: 1rem;
+    text-align: center;
     text-decoration: none;
-    color: gold;
-    background: darkolivegreen;
-    
+    color: black;
+    background: gold;
+    border-radius: 25px; 
+}
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0  white;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+.btn[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+#highscores-btn{
+    background: white;
+}
+
+.fa-basketball-ball, .fa-award{
+    font-size: 3rem;
+    margin-left: 1rem;
 }
